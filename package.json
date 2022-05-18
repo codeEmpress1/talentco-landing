@@ -1,0 +1,22 @@
+{
+  "name": "talentco-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeEmpress1/talentco-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeEmpress1/talentco-landing/issues"
+  },
+  "homepage": "https://github.com/codeEmpress1/talentco-landing#readme",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
