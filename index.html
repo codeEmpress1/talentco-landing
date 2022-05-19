@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Talentco Landing page</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/images/Transparent-Logo.svg" alt="TalentCo logo">
+        </div>
+        <!-- hamburger! -->
+
+        <input type="checkbox" class="side-menu" id="side-menu">
+        <label for="side-menu" class="hamburger"><span class="hamb-line"></span></label>
+        <nav class="header__nav">
+            <ul>
+                <li class="header__nav__list-item">
+                    <a href="">About Us</a>
+                </li>
+                <li class="header__nav__list-item">
+                    <a href="">For Companies</a>
+                </li>
+                <li class="header__nav__list-item">
+                    <a href="">For Talents</a>
+                </li>
+                <li class="header__nav__list-item">
+                    <a href="">Job Board</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__cta">
+            <a href="#" class="header__cta__button button button--outline">Hire a talent</a>
+            <a href="#" class="header__cta__button button button--primary">Apply as a talent</a>
+        </div>
+    </header>
 </body>
 </html>

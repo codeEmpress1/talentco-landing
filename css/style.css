@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+html {
+  font-size: 62.5%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 2.3rem 6.3rem 0 11rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  padding-right: 10%;
+}
+.header__logo img {
+  height: 7.4rem;
+}
+.header__nav ul {
+  display: flex;
+  column-gap: 3rem;
+}
+.header__nav ul a {
+  font-size: 1.8rem;
+  color: #272D4E;
+}
+.header__cta {
+  display: flex;
+  column-gap: 2rem;
+}
+.header__cta__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  width: 20rem;
+  height: 4.7rem;
+  border-radius: 5px;
+}
+
+.hamb-line {
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.hamb-line::after,
+.hamb-line::before {
+  background: #FFFFFF;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.hamb-line::before {
+  top: 5px;
+}
+
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamburger .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked ~ .hamburger .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.side-menu:checked ~ .hamburger .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+    color: var(--grey);
+  }
+
+  .hamb {
+    display: none;
+  }
+}
+.button--outline {
+  border: 2px solid #3789FF;
+  background-color: transparent;
+  color: #3789FF;
+}
+.button--primary {
+  border: none;
+  background-color: #3789FF;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */

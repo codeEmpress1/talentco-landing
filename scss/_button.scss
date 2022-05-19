@@ -1,0 +1,13 @@
+.button {
+    &--outline {
+        border: 2px solid $color-primary;
+        background-color: transparent;
+        color: $color-primary;
+
+    }
+    &--primary {
+        border: none;
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}

@@ -1,0 +1,110 @@
+.header {
+    padding: 2.3rem 6.3rem 0 11rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        padding-right: 10%;
+        
+        img {
+            height: 7.4rem;
+        }
+    }
+
+    &__nav ul {
+        display: flex;
+        column-gap: 3rem;
+         
+        a {
+           font-size: 1.8rem;
+           color: $color-dark;
+        }
+    }
+
+    &__cta {
+        // flex-grow: 1;
+        display: flex;
+        column-gap: 2rem;
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6rem;
+            width: 20rem;
+            height: 4.7rem;
+            border-radius: 5px;
+        }
+    }
+}
+
+.hamb-line {
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamb-line::after,
+.hamb-line::before {
+    background: $color-white;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+.hamb-line::before {
+    top: 5px;
+}
+.hamb-line::after {
+    top: -5px;
+}
+.side-menu {
+    display: none;
+}
+// toggle menu
+.side-menu:checked ~ nav {
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamburger .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamburger .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.side-menu:checked ~ .hamburger .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+@media(min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+
+    }
+
+    .menu li{
+        float: left;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--grey);
+        
+    }
+    
+    .hamb{
+        display: none;
+    }
+}
