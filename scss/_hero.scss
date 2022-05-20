@@ -1,0 +1,118 @@
+.hero-section {
+    height: auto;
+    padding: 16rem 26.5rem 7rem 18.4rem;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-hero-gradient, 1),
+        rgba($color-hero-gradient, 0)
+    );
+
+    &--main {
+        justify-items: flex-end;
+        padding-bottom: 19rem;
+    }
+
+    &--main-text {
+        .heading {
+            font-size: 8.5rem;
+            font-weight: 700;
+            color: $color-dark;
+            padding-bottom: 2.9rem;
+        }
+        .default-text {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: $color-light--text;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__cta {
+        width: 26.7rem;
+        height: 7.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    &__img-box {
+        // background-image: url(../assets/images/image\ 15.svg);
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        height: 48.3rem;
+        width: 36.4rem;
+        overflow: hidden;
+        border-radius: 2rem;
+        box-shadow: 0px 18px 52.85px 0px #A2ADC080;
+        position: relative;
+        z-index: 5;
+    }
+
+    &--secondary-text {
+        text-align: center;
+        h2 {
+            font-size: 5.5rem;
+            font-weight: 600;
+            color: $color-dark;
+            padding-bottom: 2.5rem;
+        }
+        
+        p {
+            color: $color-light--text;
+            font-size: 1.8rem;
+            max-width: 107rem;
+            margin: 0 auto;
+        } 
+    }
+    .dot-group1 {
+        position: absolute;
+        z-index: 4;
+        top: 38%;
+        left: 82.6%;
+        width: 23.5rem;
+    }   
+    .dot-group2 {
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        z-index: 2;
+    } 
+    .dot-group3 {
+        width: 25rem;
+        position: absolute;
+        top: 15%;
+        left: 73.5%;
+        z-index: 3;
+    }
+    .figma {
+        position: absolute;
+        width: 10rem;
+        top: 33%;
+        right: 34%;
+        z-index: 5;
+
+    }
+    .xd {
+        position: absolute;
+        width: 10rem;
+        top: 33%;
+        right: 10%;
+        z-index: 5;
+
+    }
+    .html {
+        position: absolute;
+        width: 10rem;
+        top: 52%;
+        right: 34%;
+        z-index: 5;
+
+    }
+    .java {
+        position: absolute;
+        width: 10rem;
+        top: 18%;
+        right: 10%
+    }
+}
