@@ -1,4 +1,13 @@
 body {
     max-width: 1920px;
     margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+.grid {
+    display: grid;
+
+    &-col--2 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
